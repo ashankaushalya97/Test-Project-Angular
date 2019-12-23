@@ -1,0 +1,43 @@
+<h3 style="color: red">This is my new interface</h3>
+<h3>{{10+20}}</h3>
+<h3>{{name}}</h3>
+<ul>
+  <li *ngFor="let c of arr;">{{c}}</li>
+</ul>
+<ul>
+  <li *ngFor="let c of arr; let i = index">{{i + ' - '+c }}</li>
+</ul>
+
+<ul>
+  <li *ngFor="let b of customers; let i = index">{{i+ ' - '+b.address}}</li>
+</ul>
+
+
+<table class="table table-hover table-borderd">
+  <thead>
+  <th>ID</th>
+  <th>Name</th>
+  <th>Address</th>
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let c of customers">
+    <td>{{c.id}}</td>
+    <td>{{c.name}}</td>
+    <td>{{c.address}}</td>
+
+  </tr>
+  </tbody>
+
+</table>
+
+
+<hr>
+<div class="form-group">
+  <label>Enter something here</label>
+  <input class="form-controll" type="text">
+</div>
+
+<hr>
+<div>Output</div>
+<div></div>
